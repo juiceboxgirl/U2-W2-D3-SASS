@@ -1,0 +1,22 @@
+font-style {
+  family: "Helvetica", sans-serif;
+  weight: 400;
+}
+
+$fontSize: (
+  "small": 10px,
+  "medium": 20px,
+  "large": 30px,
+  "xlarge": 40px,
+);
+
+@mixin bigTitle() {
+  font-weight: 800;
+  font-size: 40px;
+  color: #002a37;
+}
+
+h1 {
+  @include bigTitle();
+  margin-left: 1em;
+}

@@ -1,0 +1,61 @@
+@import "./partials/animations";
+@import "./partials/buttons";
+@import "./partials/colors";
+@import "./partials/font";
+@import "./partials/margins";
+@import "./partials/mixins";
+@import "./partials/spaces";
+@import "./partials/reset";
+
+nav {
+  background-color: #002a37;
+  min-width: 1200px;
+  min-height: 50px;
+
+  img {
+    float: left;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+
+  a {
+    float: left;
+    display: block;
+    color: #f4f4f4;
+    text-align: center;
+    text-decoration: none;
+    padding: 1em;
+  }
+  a:hover {
+    background-color: #f4f4f4;
+    color: #002a37;
+  }
+}
+
+p {
+  color: #002a37;
+  font-size: 10px;
+  margin-left: 4em;
+  margin-top: -2em;
+}
+
+header {
+  position: relative;
+  min-height: 15em;
+  background-color: #65b7d0;
+  object-fit: scale-down;
+
+  img {
+    float: right;
+    margin-right: 28em;
+    margin-top: -125px;
+    -webkit-box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.47);
+  }
+}
+
+.container0 {
+  padding: 2em;
+}

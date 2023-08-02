@@ -1,0 +1,27 @@
+$btnColors: (
+  "blue": #0e6cff,
+  "orange": #ff8700,
+  "green": #4caf50,
+);
+
+@each $key, $value in $btnColors {
+  .btn-#{$key} {
+    border-color: $value;
+  }
+}
+
+button {
+  font-size: 10px;
+  border-radius: 10px;
+  border: 2px solid;
+  margin-left: 4em;
+  min-width: 80px;
+}
+
+button:hover {
+  @each $key, $value in $btnColors {
+    .btn-#{$key} {
+      background-color: $value;
+    }
+  }
+}
