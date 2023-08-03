@@ -18,21 +18,22 @@ button {
   min-width: 80px;
 }
 
-button:hover .btn-blue {
+.btn-blue:hover {
   background-color: #0e6cff;
 }
-button:hover .btn-orange {
+
+.btn-orange:hover {
   background-color: #ff8700;
 }
-button:hover .btn-green {
+
+.btn-green:hover {
   background-color: #4caf50;
 }
 
-font-style {
+/* font: {
   family: "Helvetica", sans-serif;
   weight: 400;
-}
-
+} */
 h1 {
   font-weight: 800;
   font-size: 40px;
@@ -41,9 +42,10 @@ h1 {
 }
 
 body {
-  max-width: 1200px;
+  min-width: 1200px;
   margin: 0;
   color: #f4f4f4;
+  overflow: hidden;
 }
 
 nav {
@@ -86,11 +88,27 @@ header {
 }
 header img {
   float: right;
-  margin-right: 28em;
+  margin-right: 12em;
   margin-top: -125px;
   box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.47);
 }
 
 .container0 {
   padding: 2em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box-4, .box-3, .box-2, .box-1 {
+  background-image: url(/assets/greg-becker-sYzFIusQp3Q-unsplash.jpg);
+  background-size: 200px;
+  margin-top: 1em;
+  margin-right: 1em;
+  min-width: 150px;
+  min-height: 200px;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */

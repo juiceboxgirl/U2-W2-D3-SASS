@@ -1,7 +1,9 @@
-font-style {
+@use "sass:map";
+
+/* font: {
   family: "Helvetica", sans-serif;
   weight: 400;
-}
+} */
 
 $fontSize: (
   "small": 10px,
@@ -12,7 +14,7 @@ $fontSize: (
 
 @mixin bigTitle() {
   font-weight: 800;
-  font-size: 40px;
+  font-size: map.get($fontSize, "xlarge");
   color: #002a37;
 }
 

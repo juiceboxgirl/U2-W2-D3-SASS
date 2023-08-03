@@ -18,9 +18,9 @@ button {
   min-width: 80px;
 }
 
-button:hover {
-  @each $key, $value in $btnColors {
-    .btn-#{$key} {
+@each $key, $value in $btnColors {
+  .btn-#{$key} {
+    &:hover {
       background-color: $value;
     }
   }

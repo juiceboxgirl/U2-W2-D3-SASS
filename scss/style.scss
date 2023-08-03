@@ -49,7 +49,7 @@ header {
 
   img {
     float: right;
-    margin-right: 28em;
+    margin-right: 12em;
     margin-top: -125px;
     -webkit-box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.47);
     box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.47);
@@ -58,4 +58,34 @@ header {
 
 .container0 {
   padding: 2em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+%boxImage {
+  background-image: url(/assets/greg-becker-sYzFIusQp3Q-unsplash.jpg);
+  background-size: 200px;
+  margin-top: 1em;
+  margin-right: 1em;
+  min-width: 150px;
+  min-height: 200px;
+  border-radius: 10px;
+}
+
+.box-1 {
+  @extend %boxImage;
+}
+
+.box-2 {
+  @extend %boxImage;
+}
+.box-3 {
+  @extend %boxImage;
+}
+.box-4 {
+  @extend %boxImage;
 }
